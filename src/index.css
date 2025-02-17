@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes bounceAndFade {
+  0% { 
+    opacity: 1; 
+    transform: translateX(0) translateY(0) scale(1) rotate(0deg); 
+  }
+  100% { 
+    opacity: 0; 
+    transform: translateX(var(--bounce-x)) translateY(var(--bounce-y)) scale(0.5) rotate(var(--rotation)); 
+  }
+}
+
+.animate-emoji {
+  animation: bounceAndFade 2s forwards;
+}

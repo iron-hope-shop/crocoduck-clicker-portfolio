@@ -1,0 +1,17 @@
+runtime: nodejs20
+service: default
+
+handlers:
+  # Serve static assets by matching specific file types
+  - url: /(.+\.(ico|png|jpg|jpeg|gif|svg|css|js|map|json))$
+    static_files: build/\1
+    upload: build/(.+\.(ico|png|jpg|jpeg|gif|svg|css|js|map|json))$
+
+  # Serve static files from the build/static directory
+  - url: /static
+    static_dir: build/static
+
+  # Catch-all handler to serve index.html for all other URLs
+  - url: /.*
+    static_files: build/index.html
+    upload: build/index.html

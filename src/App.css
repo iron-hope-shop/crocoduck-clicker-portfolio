@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounceAndFade {
+  0% { 
+    opacity: 1; 
+    transform: translateX(0) translateY(0) scale(1) rotate(0deg); 
+  }
+  100% { 
+    opacity: 0; 
+    transform: translateX(calc(var(--bounceX) * 100px)) translateY(calc(var(--bounceY) * 100px)) scale(0.5) rotate(calc(var(--rotation) * 1deg)); 
+  }
+}
+
+.animate-emoji {
+  animation: bounceAndFade 2s forwards;
+}
+
+.crocoduck-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1f2937; /* Tailwind's bg-gray-800 */
+  cursor: pointer;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-emoji {
+  text-align: center;
+  transition: font-size 0.3s ease;
+}
+
+@keyframes bounceAndFade {
+  0% { 
+    opacity: 1; 
+    transform: translateX(0) translateY(0) scale(1) rotate(0deg); 
+  }
+  100% { 
+    opacity: 0; 
+    transform: translateX(calc(var(--bounceX) * 100px)) translateY(calc(var(--bounceY) * 100px)) scale(0.5) rotate(calc(var(--rotation) * 1deg)); 
+  }
+}
+
+.animate-emoji {
+  position: absolute;
+  pointer-events: none;
+  animation: bounceAndFade 2s forwards;
+}

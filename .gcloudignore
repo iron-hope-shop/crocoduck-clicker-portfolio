@@ -1,0 +1,22 @@
+# This file specifies files that are *not* uploaded to Google Cloud Platform
+# (GCP) when you deploy using `gcloud app deploy`.
+#
+# Learn more about .gcloudignore files at:
+# https://cloud.google.com/sdk/gcloud/reference/topic/gcloudignore
+
+# Ignore everything
+**
+
+# But not these files...
+!app.yaml
+!build/**
+
+<!-- # If you need package.json (for setting environment variables), you can include it
+!package.json -->
+
+<!-- # If you have other configuration files you need, you can include them as well
+#!other-config-file.yaml -->
+
+.shhh_secrets
+.red_herring
+?really_dude
