@@ -2,6 +2,8 @@
 
 Crocoduck Clicker is a fun, quirky clicker game where you toggle between a duck and a crocodile to rack up points, level up, and collect bonus bread for extra rewards. Built using React, Material-UI, and CryptoJS, this silly game leverages encrypted local storage to save your progress and adds delightful animations for every click.
 
+![A silly clicker game.](./images/clicker.gif)
+
 ---
 
 ## Features
